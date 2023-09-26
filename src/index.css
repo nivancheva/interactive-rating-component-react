@@ -1,5 +1,6 @@
 :root {
     --clr-orange: hsl(25, 97%, 53%);
+    --clr-orange-soft: hsla(25, 97%, 63%, .7);
     --clr-white: hsl(0, 0%, 100%);
     --clr-light-gray: hsl(217, 12%, 63%);
     --clr-mid-gray: hsl(216, 12%, 54%);

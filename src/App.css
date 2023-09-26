@@ -17,7 +17,8 @@
 
     line-height: 1.5;
 }
-.card h1 {
+.card h1,
+.thank_you-card h2 {
     color: var(--clr-white);
     margin-bottom: .25em;
 }
@@ -64,4 +65,20 @@
     background-color: var(--clr-white);
     color: var(--clr-orange);
     cursor: pointer;
+}
+
+.thank_you-card {
+    place-items: center;
+    text-align: center;
+
+    padding: 1em 2.25em;
+}
+
+.selected-rating {
+    color: var(--clr-orange-soft);
+    background-color: var(--clr-blue);
+    padding: .75em 1.25em;
+    border-radius: 100vw;
+
+    line-height: 1;
 }
