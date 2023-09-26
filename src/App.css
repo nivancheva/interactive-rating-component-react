@@ -9,7 +9,7 @@
 
 .card {
     width: 330px;
-    background: linear-gradient(var(--clr-blue), var(--clr-vd-blue));
+    background: radial-gradient(farthest-corner at 50% 0px, var(--clr-blue), var(--clr-vd-blue));
     padding: 2em;
     gap: 1.25em;
 
