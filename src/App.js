@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import './App.css';
+import ThankYouCard from './components/ThankYouCard';
 
 function App() {
   const [selected, setSelected] = useState(0);
@@ -30,7 +31,9 @@ function App() {
             {ratings.map(x => {
               const selectedClass = x == selected ? "selected" : "";
               return (
-                <button key={x} className={`btn-rating rating ${selectedClass}`} onClick={() => setSelected(x)}>{x}</button>
+                <button key={x}
+                  className={`btn-rating rating ${selectedClass}`}
+                  onClick={() => setSelected(x)}>{x}</button>
               );
             })}
           </div>
@@ -39,14 +42,7 @@ function App() {
       }
 
       {rated &&
-        <div className='card grid-area thank_you-card'>
-          <img src='./images/illustration-thank-you.svg'/>
-          <p className='selected-rating'>{`You selected ${selected} out of 5`}</p>
-          <div>
-            <h2>Thank You!</h2>
-            <p>We appreciate you taking the time to give a rating. If you ever need support, don't hesitate to get in touch!</p>
-          </div>
-        </div>
+        <ThankYouCard selected={selected}/>
       }
       </div>
     </div>
