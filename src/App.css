@@ -8,11 +8,22 @@
 }
 
 .card {
-    width: 250px;
-    background: linear-gradient(var(--clr-blue), var(--clr-vd-blue))
+    width: 330px;
+    background: linear-gradient(var(--clr-blue), var(--clr-vd-blue));
+    padding: 2em;
+    gap: 1.25em;
+
+    border-radius: 1em;
+
+    line-height: 1.5;
+}
+
+.card h2 {
+    color: var(--clr-white);
 }
 
 .buttons {
-    grid-template-columns: repeat(5, 3rem);
+    grid-template-columns: repeat(5, 2rem);
     justify-content: space-between;
+    gap: .5em;
 }

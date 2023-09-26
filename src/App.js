@@ -6,7 +6,7 @@ function App() {
     <div className='wraper grid-area'>
       <div className='card grid-area'>
         <img src='./images/icon-star.svg'/>
-        <h1>How did we do?</h1>
+        <h2>How did we do?</h2>
         <p>Please let us Know how we did with your supprort request. All feedback is appreciated to help us improve our offering!</p>
         <div className='buttons grid-area'>
           <button>1</button>
