@@ -1,0 +1,18 @@
+.wraper {
+    min-height: 100vh;
+}
+
+.grid-area {
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    width: 250px;
+    background: linear-gradient(var(--clr-blue), var(--clr-vd-blue))
+}
+
+.buttons {
+    grid-template-columns: repeat(5, 3rem);
+    justify-content: space-between;
+}
