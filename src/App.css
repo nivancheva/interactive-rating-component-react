@@ -8,22 +8,60 @@
 }
 
 .card {
-    width: 330px;
+    width: 400px;
     background: radial-gradient(farthest-corner at 50% 0px, var(--clr-blue), var(--clr-vd-blue));
-    padding: 2em;
-    gap: 1.25em;
+    padding: 2.25em;
+    gap: 1.9375em;
 
     border-radius: 1em;
 
     line-height: 1.5;
 }
-
-.card h2 {
+.card h1 {
     color: var(--clr-white);
+    margin-bottom: .25em;
 }
 
 .buttons {
-    grid-template-columns: repeat(5, 2rem);
+    grid-template-columns: repeat(5, auto);
     justify-content: space-between;
-    gap: .5em;
+}
+
+.btn-rating {
+    border: none;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--clr-blue);
+    color: var(--clr-mid-grey);
+    
+    display: grid;
+    place-content: center;
+}
+
+.btn-rating.selected {
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+}
+
+.rating:hover {
+    background-color: var(--clr-light-gray);
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.btn-submit {
+    border: none;
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1.125em;
+    border-radius: 100vw;
+}
+
+.btn-submit:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-orange);
+    cursor: pointer;
 }
